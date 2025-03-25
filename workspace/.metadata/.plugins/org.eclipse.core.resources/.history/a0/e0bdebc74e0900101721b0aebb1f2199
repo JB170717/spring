@@ -1,0 +1,9 @@
+package com.simple.ex05;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

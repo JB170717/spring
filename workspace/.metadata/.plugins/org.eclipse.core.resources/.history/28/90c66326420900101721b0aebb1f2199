@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	
+	<bean class="com.simple.ex01.Hello" id="gildong" />
+	
+	<bean class="com.simple.ex02.Chef" id="chef"/>
+	<bean class="com.simple.ex02.Hotel" id="hotel">
+		<constructor-arg ref="chef"/>
+	</bean>
+
+
+</beans>

@@ -1,0 +1,13 @@
+package com.simple.ex02;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+//		Chef chef =new Chef();
+//		Hotel hotel =new Hotel(chef);
+		
+		
+	}
+	
+}

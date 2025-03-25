@@ -1,0 +1,17 @@
+package com.simple.ex03;
+
+public class MemberDAO {
+
+	private DataSourse ds;
+
+	public DataSourse getDs() {
+		return ds;
+	}
+
+	public void setDs(DataSourse ds) {
+		this.ds = ds;
+	}
+	
+	
+	
+}

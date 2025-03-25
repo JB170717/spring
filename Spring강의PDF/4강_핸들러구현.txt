@@ -1,0 +1,11 @@
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="order" value="1" />
+		<property name="mappings">
+			<props>
+				<prop key="/맵핑경로">컨트롤러빈의아이디</prop>
+				<prop key="/맵핑경로">컨트롤러빈의아이디</prop>
+
+			</props>
+		</property>
+	</bean>
+	

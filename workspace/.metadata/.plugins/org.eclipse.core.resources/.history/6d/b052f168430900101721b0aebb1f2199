@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	
+	<bean class="com.simple.ex01.Hello" id="gildong" />
+	
+	<!-- constrictor -->
+	
+	<bean class="com.simple.ex02.Chef" id="chef"/>
+	<bean class="com.simple.ex02.Hotel" id="hotel">
+		<constructor-arg ref="chef"/>
+	</bean>
+
+	<!-- setter -->
+	<bean class="com.simple.ex03.DataSource" id="dataSource">
+		<property name="url" value="오라클주소"/>
+		<property name="uid" value="jsp" />
+		<property name="upw" value="1234" />
+	</bean>
+
+	<!-- memberDAO가 setter를 통해서 dataSource를 주입받는다 -->
+
+</beans>

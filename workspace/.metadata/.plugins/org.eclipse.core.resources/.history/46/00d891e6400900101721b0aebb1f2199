@@ -1,0 +1,28 @@
+package com.simple.ex02;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+//		Chef chef =new Chef();
+//		Hotel hotel =new Hotel(chef);
+		
+		GenericXmlApplicationContext ctx=
+				new GenericXmlApplicationContext("application-context.xml");
+		
+		//1st 이름으로 담지
+//		Hotel hotle=(Hotel)ctx.getBean("hotel");
+//		hotle.getChef().cooking();
+		
+		//2nd
+		//Hotle hotel = ctx.getBean(Hotel.class);
+		
+		Hotel hotel =ctx.getBean("hotel", Hotle.class);
+		hotel.getChef().cooking();
+		
+		
+	}
+	
+}

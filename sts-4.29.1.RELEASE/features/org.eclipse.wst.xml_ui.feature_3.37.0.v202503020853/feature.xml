@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2005, 2018 IBM Corporation and others.
+    This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License 2.0
+    which accompanies this distribution, and is available at
+    https://www.eclipse.org/legal/epl-2.0/
+
+    SPDX-License-Identifier: EPL-2.0
+
+    Contributors:
+        IBM Corporation - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.wst.xml_ui.feature"
+      label="%featureName"
+      version="3.37.0.v202503020853"
+      provider-name="%providerName"
+      plugin="org.eclipse.wst.xml.ui">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.wst.common_ui.feature" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.xml_userdoc.feature" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.xml_core.feature" version="0.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.wst.dtd.ui"
+         download-size="252"
+         install-size="483"
+         version="1.1.700.v202308160453"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.dtd.ui.infopop"
+         download-size="15"
+         install-size="22"
+         version="1.0.400.v201903222120"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.sse.ui.infopop"
+         download-size="15"
+         install-size="24"
+         version="1.0.300.v201903222120"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.xml.ui.infopop"
+         download-size="22"
+         install-size="45"
+         version="1.0.400.v201903222120"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.sse.ui"
+         download-size="1082"
+         install-size="2288"
+         version="1.7.1000.v202409140021"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.xml.ui"
+         download-size="1032"
+         install-size="2126"
+         version="1.2.701.v202308160453"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.xsd.ui"
+         download-size="1317"
+         install-size="2662"
+         version="1.3.700.v202503020853"
+         unpack="false"/>
+
+</feature>

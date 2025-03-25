@@ -1,0 +1,8 @@
+package com.simple.ex05;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration //스프링의 설정파일로 쓰겠다.
+public class JavaConfig {
+
+}
