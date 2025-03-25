@@ -6,7 +6,6 @@ public class DataSource {
 	private String uid;
 	private String upw;
 
-
 	@Override
 	public String toString() {
 		return "DataSource [url=" + url + ", uid=" + uid + ", upw=" + upw + "]";

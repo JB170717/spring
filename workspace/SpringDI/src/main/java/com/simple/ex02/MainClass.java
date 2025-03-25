@@ -19,7 +19,7 @@ public class MainClass {
 		//2nd 클래스로 탐지
 		//Hotle hotel = ctx.getBean(Hotel.class);
 		
-		//3rd
+		//3rd 이름과 클래스로 확인
 		Hotel hotel =ctx.getBean("hotel", Hotel.class);
 		hotel.getChef().cooking();
 		

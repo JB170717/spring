@@ -14,8 +14,6 @@ http://www.springframework.org/schema/beans/spring-beans.xsd"
 		<constructor-arg ref="chef"/>
 	</bean>
 
-	<!--  -->
-
 	<!-- setter -->
 	<bean class="com.simple.ex03.DataSource" id="dataSource">
 		<property name="url" value="오라클주소"/>

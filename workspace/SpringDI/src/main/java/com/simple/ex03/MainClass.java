@@ -14,5 +14,6 @@ public class MainClass {
 		
 		MemberDAO dao=ctx.getBean(MemberDAO.class);
 		System.out.println(dao.getDataSource().toString());
+		
 	}
 }
