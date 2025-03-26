@@ -16,7 +16,7 @@ public class Printer {
 	 * @Inject
 	 * 어노테이션 같은 역할을 함
 	 */
-	@Autowired
+	@Autowired(required = false)
 	@Qualifier("doc1") //적합한 빈 이름으로 강제 연결
 	private Document document;
 	

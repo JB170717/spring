@@ -9,7 +9,7 @@ import com.simple.ex02.Hotel;
 import com.simple.ex03.DataSource;
 import com.simple.ex03.MemberDAO;
 
-@Configuration //스프링의 설정파일로 쓰겠다.
+@Configuration //스프링의 설정파일로 쓰겠다. xml대신 java코드로 칠때
 public class JavaConfig {
 
 	//<bean class="com.simple.ex01.Hello" id="gildong" />
@@ -33,6 +33,7 @@ public class JavaConfig {
 	public Hotel hotel() {
 		return new Hotel(chef());
 	}
+	
 //	<bean class="com.simple.ex03.DataSource" id="dataSource">
 //		<property name="url" value="오라클주소"/>
 //		<property name="uid" value="jsp" />
