@@ -22,8 +22,10 @@
 	</beans:bean>
 
 	<!-- base-package를 읽어서, @Contrller, @Service, @Component, @Repository이 붙은 클래스를 bean으로 등록함 -->
-	<context:component-scan base-package="com.simple.controller" />
+	<context:component-scan base-package="com.simple.*" />
+
 	
-	
+	<!-- 서비스객체를 빈으로 등록 -->
+	<!-- <beans:bean id="scoreService" class="com.simple.score.service.ScoreServiceImpl" /> -->
 	
 </beans:beans>
