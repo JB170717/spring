@@ -1,0 +1,36 @@
+#This is a generated file; do not edit.
+#Mon Mar 31 09:05:05 KST 2025
+org.eclipse.egit.doc=org.eclipse.egit.doc\n7.2.0.202503040940-r
+org.eclipse.epp.mpc.help.ui=org.eclipse.epp.mpc.help.ui\n1.12.0.v20250130-1529
+org.eclipse.epp.mpc.ui=org.eclipse.epp.mpc.ui\n1.12.0.v20250130-1529
+org.eclipse.help=org.eclipse.help\n3.10.400.v20240415-0528
+org.eclipse.help.base=org.eclipse.help.base\n4.5.0.v20250228-0140
+org.eclipse.jdt=org.eclipse.jdt\n3.19.800.v20250228-0140
+org.eclipse.jdt.doc.user=org.eclipse.jdt.doc.user\n3.15.2500.v20250224-1707
+org.eclipse.jst.ejb.doc.user=org.eclipse.jst.ejb.doc.user\n1.1.301.v201903222024
+org.eclipse.jst.j2ee.doc.user=org.eclipse.jst.j2ee.doc.user\n1.1.400.v202101072335
+org.eclipse.jst.jsf.doc.user=org.eclipse.jst.jsf.doc.user\n1.5.1.v202307262125
+org.eclipse.jst.server.ui.doc.user=org.eclipse.jst.server.ui.doc.user\n1.0.600.v201901310132
+org.eclipse.jst.ws.axis.ui.doc.user=org.eclipse.jst.ws.axis.ui.doc.user\n1.1.200.v201903222115
+org.eclipse.jst.ws.consumption.ui.doc.user=org.eclipse.jst.ws.consumption.ui.doc.user\n1.0.700.v201903222115
+org.eclipse.jst.ws.doc.user=org.eclipse.jst.ws.doc.user\n1.0.700.v201903222115
+org.eclipse.linuxtools.docker.docs=org.eclipse.linuxtools.docker.docs\n5.18.0.202503042117
+org.eclipse.m2e.core.ui=org.eclipse.m2e.core.ui\n2.4.0.20250224-0720
+org.eclipse.mylyn.wikitext.help.ui=org.eclipse.mylyn.wikitext.help.ui\n4.6.0.v20241229-1209
+org.eclipse.pde=org.eclipse.pde\n3.13.3000.v20250228-0140
+org.eclipse.pde.doc.user=org.eclipse.pde.doc.user\n3.17.0.v20241229-1130
+org.eclipse.platform=org.eclipse.platform\n4.35.0.v20250228-0140
+org.eclipse.platform.doc.user=org.eclipse.platform.doc.user\n4.35.0.v20250224-1707
+org.eclipse.ui.cheatsheets=org.eclipse.ui.cheatsheets\n3.8.500.v20240621-0541
+org.eclipse.ui.intro=org.eclipse.ui.intro\n3.7.500.v20241127-0919
+org.eclipse.ui.intro.universal=org.eclipse.ui.intro.universal\n3.5.400.v20240414-1916
+org.eclipse.wst.command.env.doc.user=org.eclipse.wst.command.env.doc.user\n1.5.400.v201903222115
+org.eclipse.wst.doc.user=org.eclipse.wst.doc.user\n1.2.0.v201903222120
+org.eclipse.wst.dtdeditor.doc.user=org.eclipse.wst.dtdeditor.doc.user\n1.1.0.v201903222120
+org.eclipse.wst.server.ui.doc.user=org.eclipse.wst.server.ui.doc.user\n1.1.600.v201901310132
+org.eclipse.wst.sse.doc.user=org.eclipse.wst.sse.doc.user\n1.2.0.v201903222120
+org.eclipse.wst.webtools.doc.user=org.eclipse.wst.webtools.doc.user\n1.0.500.v201903222120
+org.eclipse.wst.wsdl.ui.doc.user=org.eclipse.wst.wsdl.ui.doc.user\n1.0.850.v201903222115
+org.eclipse.wst.wsi.ui.doc.user=org.eclipse.wst.wsi.ui.doc.user\n1.0.750.v201903222115
+org.eclipse.wst.xmleditor.doc.user=org.eclipse.wst.xmleditor.doc.user\n1.1.0.v201903222120
+org.eclipse.wst.xsdeditor.doc.user=org.eclipse.wst.xsdeditor.doc.user\n1.0.800.v201903222120
