@@ -9,11 +9,11 @@
 <body>
 
 	<h3>ex02</h3>
-	
+
 	<form action="param" method="post">
-		id:<input type="text" name ="id">
-		pw:<input type="password" name ="pw">
-		name:<input type="text" name ="name">
+		id:<input type="text" name="id"><br>
+		pw:<input type="password" name="pw"><br>
+		name:<input type="text" name="name"><br>
 		분야:
 		<input type="checkbox" name="inter" value="자바">
 		<input type="checkbox" name="inter" value="jsp">
@@ -22,5 +22,6 @@
 		<input type="submit" value="파라미터값 받기">
 	</form>
 	
+
 </body>
 </html>

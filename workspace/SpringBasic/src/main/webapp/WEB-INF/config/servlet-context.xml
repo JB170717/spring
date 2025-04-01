@@ -9,7 +9,7 @@
 
 	
 	
-	<!-- 핸들러 어댑터, 핸들러 매핑, 스프링의 어노테이션도 사용할 수 있게함 -->
+	<!-- 핸들러 어댑터, 핸들러 매핑, 스프링의 어노테이션도 사용할수있게함 -->
 	<annotation-driven />
 
 	<!-- 정적자원 맵핑 - resources폴더 안에 파일은 컨트로러를 실행하지 않고 곧바로 실행 -->
@@ -21,11 +21,18 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 
-	<!-- base-package를 읽어서, @Contrller, @Service, @Component, @Repository이 붙은 클래스를 bean으로 등록함 -->
-	<context:component-scan base-package="com.simple.*" />
+
+	<!-- base-package를 읽어서, @Controller, @Service, @Component, @Repository이 붙은 클래스를 bean으로 등록함 -->
+	<context:component-scan base-package="com.simple.*"/>
 
 	
+	
 	<!-- 서비스객체를 빈으로 등록 -->
-	<!-- <beans:bean id="scoreService" class="com.simple.score.service.ScoreServiceImpl" /> -->
+	<!-- 
+	<beans:bean id="scoreService" class="com.simple.score.service.ScoreServiceImpl" />
+
+ 	-->	
+	
+	
 	
 </beans:beans>

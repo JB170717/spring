@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ <mapper namespace="com.simple.score.dao.ScoreMapper">
+ 	<!-- 
+ 	id에는 인터페이스의 메서드명이 들어감
+ 	select구문은 resultType속성이 반드시 필요 (DTO객체 or string, int, array 등등등..)
+ 	 -->
+ 	<select id="getTime" resultType="string">
+ 		SELECT SYSDATE FROM DUAL
+ 	</select>
+ 	
+ 	<!-- 파라미터타입은 생략이 가능(명시적으로 작성해주는게 좋음) -->
+ 	<insert id="insertOne" parameterType="string">
+ 		INSERT INTO SCORE(SNO, NAME)
+ 		VALUES(SCORE_SEQ.NEXTVAL, #{name} )
+ 	</insert>
+ 	
+ 	<insert id="insertTwo" parameterType="com.simple.command.ScoreVO">
+ 		INSERT INTO SCORE VALUES(SCORE_SEQ.NEXTVAL, #{name}, #{kor}, #{eng}, #{math} )
+ 	</insert>
+ 	
+ 	<insert id="insertThree" parameterType="map">
+ 		INSERT INTO SCORE VALUES(SCORE_SEQ.NEXTVAL, #{name}, #{kor}, #{eng}, #{math} )
+ 	</insert>
+ 	
+ 	<insert id="insertFour">
+ 		INSERT INTO SCORE(SNO, NAME, KOR, ENG) 
+ 		VALUES(SCORE_SEQ.NEXTVAL, #{name}, #{kor}, #{eng} )
+ 	</insert>
+ 	
+ 	<select id="selectOne" resultType="ScoreVO">
+ 		SELECT * FROM SCORE WHERE SNO = #{sno}
+ 	</select>
+ 	
+ 	<select id="selectTwo" resultType="map">
+ 		SELECT * FROM SCORE WHERE SNO = #{sno}
+ 	</select>
+ 	
+ 	<select id="selectThree" resultType="ScoreVO">
+ 		SELECT * FROM SCORE ORDER BY SNO DESC
+ 	</select>
+ 	
+ 	<select id="selectFour" resultType="map">
+ 		SELECT * FROM SCORE ORDER BY SNO DESC
+ 	</select>
+ 	
+ 	
+ 	<update id="updateOne" parameterType="ScoreVO">
+ 		UPDATE SCORE 
+ 		SET NAME = #{name},
+ 			KOR = #{kor},
+ 			ENG = #{eng},
+ 			MATH = #{math}
+ 		WHERE SNO = #{sno}
+ 	</update>
+ 	
+ 	
+ 	<delete id="deleteOne" parameterType="string">
+ 		DELETE FROM SCORE WHERE SNO = #{sno} 	
+ 	</delete>
+ 	
+ 	
+ 	
+ 	
+ </mapper>
+ 
+ 

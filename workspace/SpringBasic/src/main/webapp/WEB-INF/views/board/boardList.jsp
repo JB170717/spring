@@ -11,7 +11,7 @@
 	<%--다음 화면을 처리하는 메서드를 컨트롤러에 생성하세요 --%>
 	<h2>게시글 목록</h2>
 	
-	<table>		
+	<table>
 		<tr>
 			<td>번호</td>
 			<td>작성자</td>
@@ -19,23 +19,23 @@
 			<td>내용</td>
 			<td>비고</td>
 		</tr>
-		<c:forEach var="vo" items="${list}" varStatus="status" >
+		
 		<tr>
-			<td>${status.index }</td>
-			<td>${vo.name }</td>
-			<td>${vo.title }</td>
-			<td>${vo.content} </td>
+			<td>???????</td>
+			<td>???????</td>
+			<td>???????</td>
+			<td>???????</td>
 			<!-- 
 			1. boardDelete로 삭제 처리하세요. 
 			2. 삭제 후엔 목록화면으로 리다이렉트 하세요.
 			-->
-			<td><input type="button" value="삭제" onclick="location.href='boardDelete?num=${status.index }';"></td>
+			<td><input type="button" value="삭제"></td>
 		</tr>
-		</c:forEach>
+
 	</table>
 	
 	<%--게시글 작성페이지로 이동시키세요. --%>
-	<a href="boardRegister">게시글 작성</a>
+	<a href="">게시글 작성</a>
 	
 </body>
 </html>

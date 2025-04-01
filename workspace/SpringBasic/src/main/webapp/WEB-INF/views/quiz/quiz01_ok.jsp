@@ -7,14 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 	<h3>quiz_ok결과화면</h3>
-
+	
 	${quizVO.id }<br>
 	${quizVO.pw }<br>
 	${quizVO.name }<br>
-	${quizVO.email }<br>
-
+	${quizVO.email }
 	
 </body>
 </html>

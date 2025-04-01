@@ -7,14 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<h3>ex01_ok</h3>
 	
 	${name }<br>
 	${serverTime }<br>
-
-
-
+	
 	
 </body>
 </html>

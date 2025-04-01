@@ -5,5 +5,28 @@
 	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="SPRING" />
+		<property name="password" value="SPRING" />
+	</bean>
+	<!-- 커넥션 풀 적용(의존성 주입) -->
+	<bean id="ds" class="com.zaxxer.hikari.HikariDataSource">
+		<constructor-arg ref="hikariConfig" />
+	</bean>
+	
+	<!-- 마이바티스 세션팩토리 객체(매퍼를 전역적으로 관리) -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	 	<property name="dataSource" ref="ds" />
+	 	<property name="mapperLocations" value="classpath:/sqlmap/*.xml" />
+	 	<property name="configLocation" value="classpath:/mybatis-config/mybatis-config.xml"/>
+	</bean>
+
+	<!-- 이 인터페이스를 읽어서 xml을 관리해준다. -->
+	<mybatis-spring:scan base-package="com.simple.**.dao"/>
+
+
 		
 </beans>

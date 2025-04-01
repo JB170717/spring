@@ -26,9 +26,9 @@ public class HomeController {
 		
 		String formattedDate = dateFormat.format(date);
 		
-		model.addAttribute("serverTime", formattedDate );
+		model.addAttribute("serverTime", formattedDate ); //데이터
 		
-		return "home";
+		return "home"; //다시 디스패쳐서블릿 가져감
 	}
 	
 }

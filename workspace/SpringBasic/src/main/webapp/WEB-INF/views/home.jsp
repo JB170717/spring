@@ -10,17 +10,17 @@
 	</h1>
 
 	<P>  The time on the server is ${serverTime}. </P>
-	
+
+
 	<script>
 		//이런 느낌으로 접근할 수 있음
-		var msg= '${msg}';
-		if(msg != ''){
+		var msg = '${msg }';
+		if(msg != '') {
 			alert(msg);
 		}
 	</script>
 	
-	
-	
-	
+
+
 </body>
 </html>

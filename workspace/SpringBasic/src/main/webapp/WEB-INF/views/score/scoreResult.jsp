@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!-- /score/scoreList -->
+	<!-- /score/scoreRegist -->
+	<!-- /score/scoreResult -->
+
+
 	<h2>결과 화면</h2>
 	
 	<a href="scoreRegist">다시 등록하기</a>

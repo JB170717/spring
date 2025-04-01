@@ -7,12 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 	<h3>ex01_result</h3>
-
+	
 	${nick }
+	
 	
 	${myData.nick }<br>
 	${myData.birth }<br>
+	
+	
 </body>
 </html>

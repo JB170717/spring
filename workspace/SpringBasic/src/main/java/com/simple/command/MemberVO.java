@@ -2,7 +2,7 @@ package com.simple.command;
 
 import java.util.ArrayList;
 
-public class MemberVO {
+public class MemberVO { //DTO랑 똑같은거임
 
 	private String id;
 	private String pw;
@@ -10,7 +10,16 @@ public class MemberVO {
 	private ArrayList<String> inter;
 	private String nick;
 	private String birth;
-	
+			
+	@Override
+	public String toString() {
+		return "MemberVO [id=" + id + ", pw=" + pw + ", name=" + name + ", inter=" + inter + ", nick=" + nick
+				+ ", birth=" + birth + "]";
+	}
+
+	public MemberVO() {
+	}
+
 	public MemberVO(String id, String pw, String name, ArrayList<String> inter, String nick, String birth) {
 		super();
 		this.id = id;
@@ -21,14 +30,9 @@ public class MemberVO {
 		this.birth = birth;
 	}
 
-	public MemberVO() {		
-	}
-	
-	@Override
-	public String toString() {
-		return "MemberVO [id=" + id + ", pw=" + pw + ", name=" + name + ", inter=" + inter + ", nick=" + nick
-				+ ", birth=" + birth + "]";
-	}
+
+
+
 	public String getId() {
 		return id;
 	}
@@ -65,7 +69,9 @@ public class MemberVO {
 	public void setBirth(String birth) {
 		this.birth = birth;
 	}
-	
-	
 
+	
+	
+	
+	
 }

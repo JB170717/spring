@@ -10,13 +10,13 @@
 <body>
 	
 	<h2>점수 결과 화면</h2>
-		<c:forEach var="vo" items="${list}" varStatus="status">
-		번호: ${status.index }	
+		<c:forEach var="vo" items="${list }" varStatus="status">
+		번호: ${vo.sno }
 		이름: ${vo.name }
 		국어: ${vo.kor }
 		영어: ${vo.eng }
 		수학: ${vo.math }
-		<button type="button" onclick="location.href='scoreDelete?sno=${status.index}';">삭제</button>
+		<button type="button" onclick="location.href='scoreDelete?sno=${vo.sno}';">삭제</button>
 		<br>
 		</c:forEach>
 	<br>

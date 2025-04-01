@@ -19,20 +19,20 @@ import com.simple.score.service.ScoreServiceImpl;
 public class ScoreController {
 
 	//1st
-	//Private ScoreService scoreService = new ScoreServiceImpl();
+	//private ScoreService scoreService = new ScoreServiceImpl();
 	
-	//2nd - ScoreServiceImpl클래스를 빈으로 등록하고, 자바 문서에서 오토와이어드 넣어도 됨
+	//2nd - ScoreServiceImpl클래스를 빈으로 등록하고, 자바 문서에서 오토와이어드 넣어도됨
 	@Autowired
-	@Qualifier("aaaaa") //빈이름으로 연결함
+	@Qualifier("이름") //빈이름 으로연결함
 	private ScoreService scoreService;
+	
 	
 	@RequestMapping("/scoreList")
 	public String scoreList(Model model) {
 		
-		//select해서 결과를 model에 담아서 화면으로 가져감
-		
+		//select해서 결과를 model담아서 화면으로 가져감
 		ArrayList<ScoreVO> list = scoreService.getList();
-		model.addAttribute("list", list);
+		model.addAttribute("list", list); //
 		
 		return "score/scoreList";
 	}
@@ -49,11 +49,8 @@ public class ScoreController {
 	
 	@RequestMapping(value="scoreForm", method = RequestMethod.POST)
 	public String scoreForm(ScoreVO vo) {
-		
 		//등록..
-		
 		scoreService.regist(vo);
-		
 		return "redirect:/score/scoreResult";
 	}
 	
@@ -61,7 +58,16 @@ public class ScoreController {
 	public String scoreDelete(@RequestParam("sno") String sno) {
 		//삭제..
 		scoreService.delete(sno);
+		
 		return "redirect:/score/scoreList";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

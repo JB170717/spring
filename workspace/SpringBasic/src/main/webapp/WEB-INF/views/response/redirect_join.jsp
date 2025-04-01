@@ -9,11 +9,11 @@
 <body>
 
 	<h3>리다이렉트 확인하기</h3>
-
-	<form action="joinForm">
+	
+	<form action="joinForm" method="post">
 		닉네임:<input type="text" name="nick">
 		<input type="submit" value="가입">
 	</form>
-
+	
 </body>
 </html>

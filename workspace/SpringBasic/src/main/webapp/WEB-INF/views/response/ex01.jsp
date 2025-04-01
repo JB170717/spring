@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>ex01</h3>
-	
+	<h3>ex01</h3>	
 	<a href="ex01_ok">ex01_ok이동</a>
-	
+			
 	
 	<h3>ModelAttribute</h3>
 	<form action="ex01_result" method="post">
@@ -18,6 +17,7 @@
 		생일:<input type="date" name="birth">
 		<input type="submit" value="확인">
 	</form>
+	
 	
 	
 	
